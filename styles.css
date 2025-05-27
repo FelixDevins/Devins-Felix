@@ -279,4 +279,285 @@ footer a:hover {
 
 .button:hover {
   background-color: #feffff;
+}/* Resetando margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cor de fundo com gradiente suave */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #434343, #121212);  /* Gradiente de cinza para o preto */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(145deg, #121212, #8b8b8b); /* Gradiente azul */
+  color: white;
+  padding: 60px 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+header .subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+header .contact-btn {
+  background-color: #fff;
+  color: #2a5298;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin-top: 30px;  /* Adiciona o espaçamento superior */
+}
+
+header .contact-btn:hover {
+  background-color: #2a5298;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Seção Sobre */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(145deg, rgba(66, 66, 66, 0.8), rgba(18, 18, 18, 0.8));  /* Gradiente suave */
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);  /* Efeito de desfoque */
+  text-align: center;
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bio h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Seção de Habilidades */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(145deg, rgba(66, 66, 66, 0.8), rgba(18, 18, 18, 0.8));  /* Gradiente suave */
+  padding: 80px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);  /* Efeito de desfoque */
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skill {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente com bordas suaves */
+  border-radius: 15px;
+  padding: 30px;
+  width: 30%;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);  /* Sombra para dar profundidade */
+  backdrop-filter: blur(10px);  /* Efeito de desfoque no fundo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Projetos */
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(145deg, rgba(66, 66, 66, 0.8), rgba(18, 18, 18, 0.8));  /* Gradiente suave */
+  padding: 80px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);  /* Efeito de desfoque */
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 30%;
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.project a {
+  background-color: #2a5298;
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project a:hover {
+  background-color: #1e3c72;
+}
+
+/* Seção de Contato */
+.contact {
+  background-color: #2a5298;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact a {
+  background-color: #fff;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: #2a5298;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background-color: #1e3c72;
+  color: white;
+}
+
+/* Rodapé */
+footer {
+  background-color: #121212;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #2a5298;
+}
+
+.button {
+  background-color: #181818; /* cor do LinkedIn */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #feffff;
 }
